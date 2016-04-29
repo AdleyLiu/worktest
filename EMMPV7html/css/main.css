@@ -104,8 +104,8 @@ a{color:#333;}
 .m-prm .u-nav{ position: absolute; bottom: 20px; z-index: 999; width: 100%; padding-left: -10px; text-align: center; font-size: 0;}
 .m-prm .u-nav i{ display: inline-block; margin-left: 10px; width: 16px; height: 16px; background: #80acd8; cursor: pointer; border-radius: 50%;}
 .m-prm .u-nav .cur{ background: #fff;}
-.m-prm .u-imglst{ position: absolute; left: 0; top: 0; /*width: 11520px; height: 496px;*/ /*mark*/}
-.m-prm .u-imglst .txt{ position: absolute; left: 440px; top: 179px; color: #fff;}
+.m-prm .u-imglst{ position: absolute; left: 0; top: 0; }
+.m-prm .u-imglst .txt{ position: absolute; right: 52.083%; top: 35.6%; color: #fff;}
 .u-imglst .txt h2{ font-size: 36px;}
 .u-imglst .txt p{ line-height: 57px; font-size: 18px;}
 .u-imglst .txt .m-btn-2{ border-color: #fff;}

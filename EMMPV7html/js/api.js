@@ -63,10 +63,14 @@ api.animate = {
 			}
 
 			// 图片自适应宽度
-			liNum = imgList.find('li').size();
-			imgList.find('img').css('width', docW);
-			liH = firstLi.outerHeight(true) || imgList.find('li').height(); //有些时候无法找到firstLi的高度
-			liW = firstLi.outerWidth(true) || imgList.find('li').width();
+			autoSize();
+
+			function autoSize(){
+				liNum = imgList.find('li').size();
+				imgList.find('img').css('width', docW);
+				liH = firstLi.outerHeight(true) || imgList.find('li').height(); //有些时候无法找到firstLi的高度
+				liW = firstLi.outerWidth(true) || imgList.find('li').width();	
+			}
 			if(startNum > 1){
 				imgList.css('left', -liW);
 			}
