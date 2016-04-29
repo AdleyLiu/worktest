@@ -180,3 +180,28 @@ api.animate = {
 		}
 	}
 }
+
+//公用js
+api.common = {
+	nav: function(){
+		var ele = $('.m-nav .level1').has('.u-list');  //获取存在下级菜单的元素
+		ele.on('mouseover', function(){
+			$(this).find('.u-list').show();
+			$(this).children('a').addClass('cur');
+		})
+		ele.on('mouseout', function(){
+			$(this).find('.u-list').hide();
+			$(this).children('a').removeClass('cur');
+		})
+	}
+}
+
+//公共js初始化
+api.init = function(){
+	api.common.nav();
+}
+
+
+$(function(){
+	api.init();
+});

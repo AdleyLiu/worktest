@@ -14,13 +14,31 @@
 	<div class="g-hd">
 		<div class="f-ma f-plr20">
 			<div class="m-logo f-fl"><a class="f-db f-ti" href="#">优讯通API开放平台首页</a></div>
-			<div class="m-nav f-fl f-fs0 f-ff1">
-				<a class="f-fs3 cur" href="#">首页</a>
-				<a class="f-fs3" href="#">开放API接口</a>
-				<a class="f-fs3" href="#">管理平台</a>
-				<a class="f-fs3" href="#">API接口文档</a>
-				<a class="f-fs3" href="#">帮助支持</a>
-			</div>
+			<ul class="m-nav f-fl f-ff1">
+				<li class="f-fs3 f-fl level1">
+					<a class="f-fs3" href="#">首页</a>
+				</li>
+				<li class="f-fs3 f-fl f-pr level1" href="#">
+					<a href="javascript:;">开放API接口</a>
+					<ul class="u-list f-dn">
+						<li><a href="#">验证码短信接口</a></li>
+						<li><a href="#">通知短信接口</a></li>
+						<li><a href="#">语音验证码接口</a></li>
+						<li><a href="#">验证码邮件接口</a></li>
+						<li><a href="#">群发邮件接口</a></li>
+						<li><a href="#">流量充值接口</a></li>
+					</ul>
+				</li>
+				<li class="f-fs3 f-fl level1">
+					<a href="#">管理平台</a>
+				</li>
+				<li class="f-fs3 f-fl level1">
+					<a href="#">API接口文档</a>
+				</li>
+				<li class="f-fs3 f-fl level1">
+					<a href="#">帮助支持</a>
+				</li>
+			</ul>
 			<div class="f-fr f-fs0 f-pt15">
 				<a class="m-btn m-btn-1a f-mr15" href="#">登录</a>
 				<a class="m-btn m-btn-2a" href="#">注册</a>
@@ -53,7 +71,7 @@
 		<ul class="list">
 			<li class="f-fl item">
 				<i class="ico1"></i>
-				<h3>短信   验证码</h3>
+				<h3>短信验证码</h3>
 				<h4>正规106通道、极速到达三网合一、调用简单</h4>
 				<p>≤ 0.045元/条 无起发量</p>
 			</li>
@@ -206,13 +224,13 @@
 	<script type="text/javascript">
 		api.animate.carousel.init({
 			promoId: 'promo-1',
+			time: 9000,
 			autoPlay: true,
 			playNav: true
 		});
 
 		api.animate.carousel.init({
 			promoId: 'promo-2',
-			time: 2000,
 			playNav: false,
 			autoPlay: false
 		});
